@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airline Ticket Reservation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="tickety.png" alt="Airline Header">
+    <h1>Airline Ticket Reservation</h1>
+  </header>
+
+  <form id="reservationForm" action="/reserve" method="POST">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your e-mail">
+
+    <label for="flightDate">Flight Date:</label>
+    <input type="date" id="flightDate" name="flightDate" required>
+
+    <label for="destination">Destination:</label>
+<select id="destination" name="destination" required>
+  <option value="">-- Select Destination --</option>
+  <option value="New York (JFK)">New York (JFK)</option>
+  <option value="Los Angeles (LAX)">Los Angeles (LAX)</option>
+  <option value="Toronto (YYZ)">Toronto (YYZ)</option>
+  <option value="London (LHR)">London (LHR)</option>
+  <option value="Paris (CDG)">Paris (CDG)</option>
+  <option value="Dubai (DXB)">Dubai (DXB)</option>
+  <option value="Tokyo (HND)">Tokyo (Haneda)</option>
+  <option value="Sydney (SYD)">Sydney (SYD)</option>
+</select>
+
+
+    <label>
+      <input type="checkbox" id="roundTrip" name="roundTrip">
+      Round-Trip
+    </label>
+
+    <div id="returnDateContainer" style="display:none;">
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" name="returnDate">
+    </div>
+
+    <button type="submit">Reserve Ticket</button>
+  </form>
+
+  <footer>Bello Bolaji &copy; 2025</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

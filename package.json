@@ -1,0 +1,23 @@
+{
+  "name": "airline-ticket-reservation",
+  "version": "1.0.0",
+  "description": "airline ticket reservation",
+  "license": "ISC",
+  "author": "Bolaji Bello",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+
+  },
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "express": "^5.2.1",
+    "nodemailer": "^7.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
