@@ -22,7 +22,7 @@ Users can book one-way or round-trip tickets, select a destination, and receive 
 ---
 
 ## 📂 Project Structure
-
+```
 airline-reservation/ 
 │ 
 ├── public/ 
@@ -33,7 +33,7 @@ airline-reservation/
 ├── server.js           # Express server 
 ├── package.json        # Dependencies and scripts 
 └── README.md           # Project documentation
-
+```
 
 ---
 
